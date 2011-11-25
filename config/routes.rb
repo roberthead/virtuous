@@ -1,4 +1,8 @@
 Virtuous::Application.routes.draw do
+
+  root :to => 'hello#show'
+  match "/hello/:id" => "hello#show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
