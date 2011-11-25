@@ -2,8 +2,12 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.2'
 
-gem 'mysql2'
-gem 'pg'
+group :development, :test do
+  gem 'mysql2'
+end
+
+gem 'haml'
+gem 'compass'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,4 +38,9 @@ gem 'heroku'
 group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
+  gem 'rspec'
+end
+
+group :production, :staging do
+  gem 'pg'
 end
