@@ -9,6 +9,7 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
       = csrf_meta_tag
-  %body.bp
-    #container
-      = yield
+  %body{:class => "bp #{controller.controller_name}_controller"}
+    #spread
+      #page_content
+        = yield

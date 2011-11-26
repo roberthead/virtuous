@@ -1,3 +1,19 @@
 @import "compass";
 @import "blueprint";
 
+@import "compass/layout";
+
+$spread_bg: #E7E7E7;
+$page_content_bg: #FFF;
+
+body {
+  background-color: $spread_bg;
+}
+
+#spread {
+  background-color: $spread_bg;
+  #page_content {
+    @include container;
+    background-color: $page_content_bg;
+  }
+}
