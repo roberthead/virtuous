@@ -55,5 +55,10 @@ module Virtuous
     config.autoload_paths += %W(#{config.root}/lib)
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
 
+    # SASS / scss / compass
+    config.sass.load_paths << "#{Rails.root}/app/assets/stylesheets"
+    config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
+    config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/blueprint/stylesheets"
+
   end
 end

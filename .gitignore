@@ -16,3 +16,8 @@
 
 # Ignore local config settings
 .rvmrc
+
+# Mac OS X cruft
+/.DS_Store
+/*/.DS_Store
+/*/*/.DS_Store
