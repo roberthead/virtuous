@@ -1,8 +1,9 @@
+// framework imports
 @import "compass";
+@import "compass/layout";
 @import "blueprint";
 
-@import "compass/layout";
-
+// application imports
 $spread_bg: #E7E7E7;
 $page_content_bg: #FFF;
 
@@ -15,5 +16,17 @@ body {
   #page_content {
     @include container;
     background-color: $page_content_bg;
+    > * {
+      border: 1px solid blue;
+    }
+    #page_header {
+      @include clearfix;
+    }
+    #page_main {
+      @include clearfix;
+    }
+    #page_footer {
+      @include clearfix;
+    }
   }
 }

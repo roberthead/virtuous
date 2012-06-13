@@ -1,17 +1,36 @@
-/* line 9, ../../app/assets/stylesheets/application.scss */
+/* line 10, ../../app/assets/stylesheets/application.scss */
 body {
   background-color: #e7e7e7;
 }
 
-/* line 13, ../../app/assets/stylesheets/application.scss */
+/* line 14, ../../app/assets/stylesheets/application.scss */
 #spread {
   background-color: #e7e7e7;
 }
-/* line 15, ../../app/assets/stylesheets/application.scss */
+/* line 16, ../../app/assets/stylesheets/application.scss */
 #spread #page_content {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
   background-color: white;
+}
+/* line 19, ../../app/assets/stylesheets/application.scss */
+#spread #page_content > * {
+  border: 1px solid blue;
+}
+/* line 22, ../../app/assets/stylesheets/application.scss */
+#spread #page_content #page_header {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 25, ../../app/assets/stylesheets/application.scss */
+#spread #page_content #page_main {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 28, ../../app/assets/stylesheets/application.scss */
+#spread #page_content #page_footer {
+  overflow: hidden;
+  *zoom: 1;
 }

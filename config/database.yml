@@ -9,6 +9,7 @@ defaults: &defaults
 development:
   database: <%= application_name %>_development
   <<: *defaults
+  password:
 
 test:
   database: <%= application_name %>_test
