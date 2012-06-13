@@ -36,6 +36,8 @@ gem 'heroku'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 
+gem 'thin'
+
 group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
